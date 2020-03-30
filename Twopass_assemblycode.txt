@@ -1,0 +1,58 @@
+ START 20
+ INP ='3'                                                       
+ INP A
+ BRP LOOP
+//
+LOOP SUB A  
+ BRZ LOOP     
+ ADD M 
+ DIV A,Reg1,Reg2    
+YO SAC B   
+ ADD B                                  
+//hey trying something
+//this is a sample comment
+L3 SUB P
+//Code Starts Here
+ CLA 
+ INP A
+ INP B
+LOOP SUB B
+ DIV A,R1,R2
+YO SAC B
+ DSP A
+ CLA
+ DSP B
+ ADD K                
+//hey trying something
+//this is a sample comment
+L3 SUB P
+//Code Starts Here
+ CLA 
+// CLear Accumulator
+ INP M
+ INP B 
+//B
+ LAC B
+ SUB B
+ ADD ='5'
+ BRN L3
+ DSP A
+ CLA
+ DSP B
+ CLA
+T BRZ L3
+L4 CLA
+ INP B  
+ CLA
+T BRZ L3
+L4 CLA
+A DC 1
+B DC 2
+P DC 6
+K DC 0
+C DC 123
+M DC 23	
+ STP
+
+
+
